@@ -7,34 +7,26 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #E5E5E5;
-  
 }
-
 
 body::before {
   content: '';
   background-color: black;
   position:absolute;
-  display: block; 
   z-index:-1;
   height: 368px; 
   width: 100%;
   top: 0;
+  left: 0;
 }
 
 header {
-   width: 736px;
-  border: 1px solid red;
-  margin: auto;
+  /* border: 1px solid red; */
   margin-top: 74px; 
+  width: 319px;
  }
 
-.container {
-  border: 1px solid green;
-  width: 319px;
-}
-
-h1 {
+ h1 {
   font-family: 'Archivo', sans-serif;
   font-weight: bold;
   font-size: 36px;
@@ -50,5 +42,14 @@ header p {
   height: 52px;  
 }
 
+.page {
+  width: 736px;
+  margin: auto;
+}
 
-
+form {
+  background-color: #FAFAFC;
+  height: 400px;
+  margin-top: 38px;
+  border-radius: 8px;
+}
