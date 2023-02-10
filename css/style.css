@@ -25,7 +25,6 @@ body::before {
 }
 
 header {
-  /* border: 1px solid red; */
   margin-top: 74px;
   width: 319px;
 }
@@ -54,7 +53,7 @@ header p {
 
 form {
   background-color: #FAFAFC;
-  height: 400px;
+  height: 950px;
   margin-top: 38px;
   border-radius: 8px;
   padding: 64px;
@@ -62,6 +61,12 @@ form {
 
 fieldset {
   border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 fieldset legend {
@@ -73,9 +78,7 @@ fieldset legend {
   border-bottom: 1px solid #E6E6F0;
   width: 100%;
   padding-bottom: 16px;
-
 }
-
 
 .input-group {
   display: flex;
@@ -86,8 +89,7 @@ label {
   font-size: 14px;
   line-height: 24px;
   color: #1b1a1d;
-  margin-bottom: 8px;
-  
+  margin-bottom: 8px;  
 }
 
 label span {
@@ -96,15 +98,27 @@ label span {
   line-height: 20px;
 }
 
+label span:hover {
+  opacity: 0.8;
+}
 
-.input-group input{
+.input-group input, 
+.input-group textarea{
   background-color: #FAFAFC;
   border: 1px solid #E6E6F0;
   border-radius: 8px;
-  height: 56px;
-  padding: 0 24px;
   font-size: 16px;
   line-height: 26px;
-  color: #aaa0b0;
-
+  color:  #5a575f;  
 }
+
+.input-group input {
+  height: 56px;
+  padding: 0 24px;  
+}
+
+.input-group textarea {
+  padding: 10px 10px 0;
+  height: 168px;  
+}
+
